@@ -481,16 +481,4 @@ function get_average_rating($product_id) {
     $result = mysqli_query($conn, $query);
     return mysqli_fetch_assoc($result);
 }
-function get_products_by_category($category_id) {
-    global $conn; // make sure $conn is from config.php
-    $category_id = (int)$category_id;
-    $query = "SELECT * FROM products WHERE category_id = $category_id AND status = 'active'";
-    $result = mysqli_query($conn, $query);
-    $products = [];
-    while ($row = mysqli_fetch_assoc($result)) {
-        $products[] = $row;
-    }
-    return $products;
-}
-
 ?>
