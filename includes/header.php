@@ -44,7 +44,7 @@ $wishlist_count = get_wishlist_count();
         
       <!-- CENTER: Website Name -->
 <div class="nav-center">
-    <h1 class="site-name">The Jainz</h1>
+    <h1 class="site-name">The </h1>
 </div>
 
 
